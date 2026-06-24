@@ -1,0 +1,1210 @@
+:root {
+  --ink: #172528;
+  --muted: #5c676b;
+  --paper: #fbf8f1;
+  --white: #ffffff;
+  --teal: #183b45;
+  --teal-soft: #e7f0ee;
+  --gold: #b7792f;
+  --gold-deep: #8d551f;
+  --gold-soft: #f4dfb4;
+  --clay: #8a4c35;
+  --charcoal: #10191b;
+  --mist: #eef3f1;
+  --line: rgba(23, 37, 40, 0.14);
+  --shadow: 0 18px 48px rgba(23, 37, 40, 0.16);
+  --radius: 8px;
+  --max: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+  z-index: 100;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--teal);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 74px;
+  padding: 12px clamp(18px, 4vw, 48px);
+  background: rgba(251, 248, 241, 0.95);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(16px);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 240px;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  border: 1px solid rgba(183, 121, 47, 0.45);
+  border-radius: 50%;
+  background: var(--teal);
+  color: var(--gold-soft);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.brand strong,
+.brand small {
+  display: block;
+}
+
+.brand strong {
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.brand small {
+  margin-top: 2px;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.site-nav a {
+  padding: 8px 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible,
+.site-nav a[aria-current="page"] {
+  border-bottom-color: var(--gold);
+  outline: none;
+}
+
+.nav-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  padding: 9px;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 2px;
+  margin: 5px 0;
+  background: var(--teal);
+}
+
+.section-inner {
+  width: min(var(--max), calc(100% - 36px));
+  margin: 0 auto;
+}
+
+.narrow {
+  max-width: 820px;
+}
+
+.section {
+  padding: clamp(64px, 9vw, 116px) 0;
+}
+
+.hero,
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  color: var(--white);
+}
+
+.home-hero {
+  min-height: calc(88svh - 74px);
+  display: grid;
+  align-items: center;
+}
+
+.hero-media {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(12, 25, 28, 0.88), rgba(12, 25, 28, 0.55) 56%, rgba(12, 25, 28, 0.24)),
+    linear-gradient(180deg, rgba(12, 25, 28, 0.08), rgba(12, 25, 28, 0.74)),
+    url("assets/hero-botswana-dawn.jpg") center / cover no-repeat;
+  transform: scale(1.02);
+}
+
+.hero-content {
+  position: relative;
+  width: min(820px, calc(100% - 36px));
+  margin-left: clamp(18px, 7vw, 92px);
+  padding: 70px 0 84px;
+}
+
+.page-hero {
+  background:
+    linear-gradient(90deg, rgba(16, 43, 50, 0.94), rgba(16, 43, 50, 0.76)),
+    url("assets/hero-botswana-dawn.jpg") center / cover no-repeat;
+}
+
+.books-hero {
+  background:
+    linear-gradient(90deg, rgba(16, 43, 50, 0.94), rgba(16, 43, 50, 0.72)),
+    url("assets/leiso-memory.jpg") center / cover no-repeat;
+}
+
+.speaking-hero {
+  background:
+    linear-gradient(90deg, rgba(16, 43, 50, 0.95), rgba(16, 43, 50, 0.7)),
+    url("assets/speaking-road.jpg") center / cover no-repeat;
+}
+
+.media-hero {
+  background:
+    linear-gradient(90deg, rgba(16, 43, 50, 0.95), rgba(16, 43, 50, 0.72)),
+    url("assets/storm-sky.jpg") center / cover no-repeat;
+}
+
+.resources-hero,
+.contact-hero,
+.about-hero {
+  background:
+    linear-gradient(90deg, rgba(16, 43, 50, 0.95), rgba(16, 43, 50, 0.72)),
+    url("assets/hero-botswana-dawn.jpg") center / cover no-repeat;
+}
+
+.page-hero-inner {
+  min-height: 420px;
+  display: grid;
+  align-content: center;
+  padding: 74px 0;
+}
+
+.profile-hero {
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+.profile-hero-inner {
+  min-height: 520px;
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+  gap: clamp(28px, 6vw, 72px);
+  align-items: center;
+  padding: clamp(58px, 9vw, 92px) 0;
+}
+
+.profile-hero img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid rgba(244, 223, 180, 0.42);
+  border-radius: var(--radius);
+  box-shadow: 0 20px 54px rgba(0, 0, 0, 0.28);
+}
+
+.profile-hero p {
+  max-width: 790px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.page-hero-inner p {
+  max-width: 760px;
+  margin: 0 0 28px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: clamp(19px, 2vw, 24px);
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--gold);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero .eyebrow,
+.page-hero .eyebrow,
+.testimonials-section .eyebrow {
+  color: var(--gold-soft);
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+  overflow-wrap: anywhere;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+h1 {
+  max-width: 900px;
+  margin-bottom: 18px;
+  font-size: clamp(44px, 8vw, 88px);
+}
+
+.page-hero h1 {
+  max-width: 960px;
+  font-size: clamp(42px, 6vw, 76px);
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: clamp(31px, 4.8vw, 56px);
+}
+
+h3 {
+  margin-bottom: 12px;
+  font-size: clamp(22px, 2.8vw, 28px);
+}
+
+.hero-lead {
+  max-width: 760px;
+  margin: 0 0 10px;
+  font-size: clamp(23px, 3vw, 34px);
+  line-height: 1.35;
+}
+
+.hero-copy {
+  max-width: 720px;
+  margin: 0 0 30px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: clamp(18px, 2vw, 23px);
+}
+
+.lead {
+  color: var(--ink);
+  font-size: 21px;
+  line-height: 1.45;
+}
+
+.hero-actions,
+.button-row,
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 12px 18px;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.button-primary {
+  background: var(--gold);
+  color: #fffaf0;
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.button-primary:hover,
+.button-primary:focus-visible {
+  background: var(--gold-deep);
+}
+
+.button-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.42);
+}
+
+.button-secondary.light {
+  color: var(--teal);
+  background: var(--white);
+  border-color: rgba(24, 59, 69, 0.24);
+}
+
+.button-secondary:hover,
+.button-secondary:focus-visible {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.button-text {
+  min-height: 42px;
+  padding-inline: 0;
+  color: var(--teal);
+  border-color: transparent;
+  background: transparent;
+}
+
+.intro-band {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+  gap: clamp(26px, 5vw, 72px);
+  align-items: center;
+  padding: 34px 0;
+}
+
+.statement {
+  margin: 0;
+  font-size: clamp(22px, 3vw, 36px);
+  line-height: 1.3;
+}
+
+.scripture-note {
+  border-left: 3px solid var(--gold-soft);
+  padding-left: 18px;
+}
+
+.scripture-note span {
+  color: var(--gold-soft);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.scripture-note p {
+  margin: 6px 0 0;
+}
+
+.split-feature,
+.preview-layout,
+.contact-layout,
+.booking-layout {
+  display: grid;
+  gap: clamp(34px, 6vw, 80px);
+  align-items: start;
+}
+
+.split-feature {
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 430px);
+  align-items: center;
+}
+
+.preview-layout {
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+}
+
+.contact-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 470px);
+}
+
+.booking-layout {
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+}
+
+.portrait-feature {
+  margin: 0;
+}
+
+.portrait-feature img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.portrait-feature figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
+
+.section-heading {
+  max-width: 790px;
+  margin-bottom: clamp(28px, 5vw, 54px);
+}
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 19px;
+}
+
+.section-heading.compact {
+  margin-bottom: 32px;
+}
+
+.books-band,
+.values-section,
+.resources-preview,
+.newsletter-section {
+  background: var(--mist);
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.book-card {
+  display: grid;
+  grid-template-columns: minmax(155px, 0.48fr) minmax(0, 1fr);
+  gap: 24px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: 0 10px 26px rgba(23, 37, 40, 0.08);
+}
+
+.book-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 330px;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.book-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.book-copy p,
+.split-feature p,
+.preview-layout p,
+.contact-layout p,
+.booking-layout p,
+.book-detail-copy p,
+.media-panel p,
+.resource-list p,
+.event-list p,
+.privacy-section p {
+  color: var(--muted);
+}
+
+.book-copy .button-row {
+  margin-top: auto;
+  padding-top: 18px;
+}
+
+.amazon-note {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.book-label,
+.resource-type {
+  margin: 0 0 8px;
+  color: var(--clay);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.audience-grid,
+.values-grid,
+.topic-grid,
+.media-layout,
+.testimonial-grid,
+.event-list {
+  display: grid;
+  gap: 16px;
+}
+
+.audience-grid,
+.values-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.audience-grid article,
+.values-grid article,
+.media-panel,
+.resource-list article,
+.event-list article,
+.testimonial-grid blockquote,
+.expect-list,
+.sample-box,
+.discussion-box,
+.info-grid article,
+.contact-form,
+.newsletter-form,
+.booking-form {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.audience-grid article,
+.values-grid article,
+.media-panel,
+.resource-list article,
+.event-list article,
+.testimonial-grid blockquote,
+.expect-list,
+.sample-box,
+.discussion-box,
+.info-grid article {
+  padding: 24px;
+}
+
+.audience-grid p,
+.values-grid p,
+.resource-list p,
+.event-list p,
+.media-panel p {
+  margin-bottom: 0;
+}
+
+.speaking-preview {
+  background:
+    linear-gradient(90deg, rgba(16, 43, 50, 0.94), rgba(16, 43, 50, 0.72)),
+    url("assets/speaking-road.jpg") center / cover no-repeat;
+  color: var(--white);
+}
+
+.speaking-card {
+  max-width: var(--max);
+}
+
+.speaking-card p {
+  max-width: 790px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.topic-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 28px 0 30px;
+}
+
+.topic-grid span,
+.topic-grid button {
+  min-height: 64px;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.11);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.topic-grid-large {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.topic-grid-large button {
+  min-height: 70px;
+  background: var(--white);
+  color: var(--teal);
+  border-color: var(--line);
+}
+
+.topic-grid-large button:hover,
+.topic-grid-large button:focus-visible {
+  border-color: var(--gold);
+  outline: none;
+}
+
+.resource-list {
+  display: grid;
+  gap: 14px;
+}
+
+.book-stack {
+  display: grid;
+  gap: 34px;
+}
+
+.book-detail {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.38fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 58px);
+  align-items: start;
+  padding: clamp(20px, 4vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: 0 10px 26px rgba(23, 37, 40, 0.08);
+}
+
+.book-cover-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.book-cover-panel img {
+  width: 100%;
+  border-radius: calc(var(--radius) - 2px);
+  box-shadow: var(--shadow);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.sample-box {
+  background: #fbf0dc;
+  margin-bottom: 16px;
+}
+
+.discussion-box {
+  background: var(--teal-soft);
+  margin-bottom: 16px;
+}
+
+.discussion-box ol,
+.media-panel ul,
+.expect-list ul,
+.book-detail-copy ul,
+.columns-list {
+  padding-left: 20px;
+}
+
+.booking-section,
+.contact-section,
+.events-section {
+  background: var(--white);
+}
+
+.expect-list {
+  margin-top: 28px;
+  background: var(--mist);
+}
+
+.booking-form,
+.contact-form,
+.newsletter-form {
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.contact-form h3,
+.newsletter-form h3 {
+  margin-bottom: 18px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  color: var(--teal);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+label + label {
+  margin-top: 14px;
+}
+
+.form-grid label + label {
+  margin-top: 0;
+}
+
+label.full {
+  grid-column: 1 / -1;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid rgba(23, 37, 40, 0.18);
+  border-radius: var(--radius);
+  background: #fffdf8;
+  color: var(--ink);
+  padding: 12px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--teal);
+  outline: 3px solid rgba(24, 59, 69, 0.14);
+}
+
+.choice-group {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 16px;
+  border: 1px solid rgba(23, 37, 40, 0.18);
+  border-radius: var(--radius);
+  background: #fffdf8;
+}
+
+.choice-group legend {
+  padding: 0 6px;
+  color: var(--teal);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.choice-group label {
+  display: flex;
+  grid-template-columns: none;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.choice-group label + label {
+  margin-top: 0;
+}
+
+.choice-group input {
+  width: auto;
+  margin-top: 5px;
+  accent-color: var(--gold);
+}
+
+.form-actions,
+.booking-form .button,
+.newsletter-form .button,
+.contact-form .button {
+  margin-top: 18px;
+}
+
+.form-status {
+  min-height: 24px;
+  margin: 12px 0 0;
+  color: var(--teal);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.media-layout {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.media-panel {
+  background: var(--white);
+}
+
+.asset-grid,
+.platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.asset-grid a,
+.platforms a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--mist);
+  color: var(--teal);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.testimonials-section {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.testimonial-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.testimonial-grid blockquote {
+  margin: 0;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.testimonial-grid p {
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 19px;
+}
+
+.testimonial-grid cite,
+.quote-section cite {
+  color: var(--gold-soft);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.quote-section {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.quote-section blockquote {
+  margin: 0;
+}
+
+.quote-section p {
+  margin-top: 0;
+  font-size: clamp(24px, 4vw, 42px);
+  line-height: 1.28;
+}
+
+.privacy-section {
+  background: #f0eee6;
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 32px clamp(18px, 4vw, 48px);
+  background: var(--charcoal);
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.site-footer p {
+  margin: 4px 0 0;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.site-footer a {
+  color: var(--gold-soft);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1100px) {
+  .book-grid,
+  .split-feature,
+  .preview-layout,
+  .contact-layout,
+  .booking-layout,
+  .book-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .audience-grid,
+  .values-grid,
+  .topic-grid,
+  .topic-grid-large,
+  .media-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .book-card {
+    max-width: 900px;
+  }
+
+  .portrait-feature {
+    max-width: 430px;
+  }
+}
+
+@media (max-width: 860px) {
+  .site-header {
+    min-height: 68px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px 18px 18px;
+    background: rgba(251, 248, 241, 0.98);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .site-header.nav-open .site-nav {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .home-hero {
+    min-height: calc(86svh - 68px);
+  }
+
+  .hero-media {
+    background:
+      linear-gradient(180deg, rgba(12, 25, 28, 0.48), rgba(12, 25, 28, 0.9)),
+      url("assets/hero-botswana-dawn.jpg") center / cover no-repeat;
+  }
+
+  .hero-content {
+    width: min(100% - 36px, 680px);
+    margin: 0 auto;
+    padding: 62px 0 70px;
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-hero img {
+    max-width: 320px;
+  }
+
+  .book-card {
+    grid-template-columns: minmax(170px, 250px) minmax(0, 1fr);
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .brand small {
+    display: none;
+  }
+
+  h1 {
+    font-size: clamp(41px, 13vw, 62px);
+  }
+
+  .page-hero h1 {
+    font-size: clamp(36px, 11vw, 52px);
+  }
+
+  h2 {
+    font-size: clamp(30px, 9vw, 42px);
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hero-actions,
+  .button-row,
+  .form-actions {
+    width: 100%;
+  }
+
+  .book-card,
+  .audience-grid,
+  .values-grid,
+  .topic-grid,
+  .topic-grid-large,
+  .media-layout,
+  .form-grid,
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book-card img {
+    max-width: 245px;
+    min-height: auto;
+    margin: 0 auto;
+    aspect-ratio: 5 / 8;
+  }
+
+  .book-cover-panel img {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .page-hero-inner {
+    min-height: 360px;
+    padding: 58px 0;
+  }
+
+  .audience-grid article,
+  .values-grid article,
+  .media-panel,
+  .resource-list article,
+  .event-list article,
+  .testimonial-grid blockquote,
+  .expect-list,
+  .sample-box,
+  .discussion-box,
+  .info-grid article,
+  .booking-form,
+  .contact-form,
+  .newsletter-form,
+  .book-detail {
+    padding: 20px;
+  }
+
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media print {
+  .site-header,
+  .site-footer,
+  .button,
+  .skip-link {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .page-hero,
+  .section {
+    color: black;
+    background: white !important;
+    padding: 24px 0;
+  }
+
+  .page-hero-inner {
+    min-height: auto;
+    padding: 0;
+  }
+}
