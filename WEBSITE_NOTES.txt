@@ -1,0 +1,49 @@
+KAY HARGRAVES AUTHOR WEBSITE
+
+Open locally:
+C:\Users\hargr\Documents\Unmasking the spirit of fear - Second Book\website\index.html
+
+Main files:
+- index.html
+- about.html
+- books.html
+- speaking.html
+- media.html
+- speaker-profile.html
+- resources.html
+- contact.html
+- styles.css
+- script.js
+- assets folder
+
+Included pages:
+- Home
+- About Kay
+- Books
+- Book detail: Unmasking the Spirit of Fear
+- Book detail: Quieting the Storm
+- Speaking and booking
+- Media kit
+- Downloadable speaker profile PDF
+- Online speaker profile page
+- Resources and events
+- Testimonials
+- Contact, book purchase links, book/speaking newsletter, privacy and terms
+- LinkedIn profile and Anchored Leadership newsletter links
+- Corporate and marketplace speaking positioning
+
+Live website:
+https://kgomotsohargraves-cloud.github.io/kay-hargraves-author-speaker/
+
+Before publishing online, update:
+- If a custom domain is connected later, update speaker-profile.html and assets/kay-hargraves-speaker-profile.pdf with the custom domain
+- Contact page: replace placeholder social links with real links
+- Amazon links: replace search links with exact book pages once available
+- LinkedIn profile: added
+- Anchored Leadership newsletter: added
+- Media page: speaker profile and current speaker headshot added
+- Newsletter: connect to Mailchimp, ConvertKit, Flodesk, Substack, or another provider
+- Domain: add custom domain later if desired
+
+GitHub Pages:
+This is a static site. Upload the contents of the website folder to a GitHub repository, then enable GitHub Pages from the repository settings.

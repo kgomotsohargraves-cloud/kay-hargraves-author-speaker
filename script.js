@@ -1,4 +1,4 @@
-const SITE_CONTACT_EMAIL = "anchoredleadershipteam@gmail.com";
+const SITE_CONTACT_EMAIL = "connect@liberty-global-consulting.com";
 
 const header = document.querySelector("[data-header]");
 const toggle = document.querySelector(".nav-toggle");
