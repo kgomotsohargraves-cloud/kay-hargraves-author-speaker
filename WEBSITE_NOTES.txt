@@ -33,7 +33,7 @@ Included pages:
 - Corporate and marketplace speaking positioning
 
 Live website:
-https://kgomotsohargraves-cloud.github.io/kay-hargraves-author-speaker/
+https://anchoredleadershipteam.com/
 
 Before publishing online, update:
 - If a custom domain is connected later, update speaker-profile.html and assets/kay-hargraves-speaker-profile.pdf with the custom domain

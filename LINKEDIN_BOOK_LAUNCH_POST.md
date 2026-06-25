@@ -45,7 +45,7 @@ I wrote it as an author, speaker, executive financial-crimes specialist and advi
 My prayer is that this book helps readers recognize where fear was planted, reject the lies that shaped patterns, and walk in the authority, courage, and sound mind Christ gives.
 
 Order here: [Amazon link]
-Website: https://kgomotsohargraves-cloud.github.io/kay-hargraves-author-speaker/
+Website: https://anchoredleadershipteam.com/
 Newsletter: [Newsletter link]
 
 Fear is not your identity. Christ restores what fear tried to steal.

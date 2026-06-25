@@ -52,7 +52,7 @@ const SITE_CONTACT_EMAIL = "connect@liberty-global-consulting.com";
 Current live GitHub Pages website:
 
 ```text
-https://kgomotsohargraves-cloud.github.io/kay-hargraves-author-speaker/
+https://anchoredleadershipteam.com/
 ```
 
 If you connect a custom domain later, use that domain everywhere instead.

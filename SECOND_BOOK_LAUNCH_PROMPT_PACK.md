@@ -87,7 +87,7 @@ This book is deeply personal. It carries my journey of recognizing how fear was 
 If fear has ever tried to name you, delay you, silence you, or make you forget who you are in Christ, this book is for you.
 
 Get your copy here: [Amazon link]
-Visit my website: https://kgomotsohargraves-cloud.github.io/kay-hargraves-author-speaker/
+Visit my website: https://anchoredleadershipteam.com/
 
 Fear is not your identity. Jesus came to set the captives free.
 
@@ -102,7 +102,7 @@ Unmasking the Spirit of Fear is for the person who has asked, "Why do I keep rea
 My prayer is that this book helps many find freedom, return to Christ, and walk in power, love, and a sound mind.
 
 Order here: [Amazon link]
-Website: https://kgomotsohargraves-cloud.github.io/kay-hargraves-author-speaker/
+Website: https://anchoredleadershipteam.com/
 Speaking and booking: [booking link]
 
 ## Sample Long Caption
@@ -118,7 +118,7 @@ Unmasking the Spirit of Fear walks through the seed, the soil, the lie, and the 
 My prayer is that this book blesses people, frees people, and draws many to Christ. Jesus came to set the captives free. He came for the broken, the bound, the weary, and the ones who need hope. No one is excluded from the invitation of His love.
 
 You can order your copy here: [Amazon link]
-You can visit my author website here: https://kgomotsohargraves-cloud.github.io/kay-hargraves-author-speaker/
+You can visit my author website here: https://anchoredleadershipteam.com/
 For speaking and ministry invitations: [booking link]
 
 Please share this with someone who needs to know: fear is not your identity, delay is not your destiny, and darkness is not your covering. You belong to Jesus Christ.
