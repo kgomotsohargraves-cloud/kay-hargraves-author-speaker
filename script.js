@@ -64,14 +64,14 @@ function subjectForForm(type) {
 
 function statusForPlaceholder(type) {
   if (type === "booking") {
-    return "Booking request prepared. Add a contact email in script.js so this can send directly.";
+    return "Booking request prepared. You can copy it and send it to Kay's contact email.";
   }
 
   if (type === "newsletter") {
-    return "Book and speaking signup prepared. Connect this to your newsletter platform before publishing.";
+    return "Book and speaking signup prepared. You can copy it and send it to Kay's contact email.";
   }
 
-  return "Message prepared. Add a contact email in script.js so this can send directly.";
+  return "Message prepared. You can copy it and send it to Kay's contact email.";
 }
 
 document.querySelectorAll("[data-form]").forEach((form) => {
@@ -164,7 +164,7 @@ if ("IntersectionObserver" in window) {
   );
 
   document
-    .querySelectorAll(".book-card, .book-detail, .audience-grid article, .values-grid article, .media-panel, .resource-list article, .event-list article, .testimonial-grid blockquote")
+    .querySelectorAll(".book-card, .book-detail, .audience-grid article, .values-grid article, .authority-points article, .media-panel, .resource-list article, .event-list article, .testimonial-grid blockquote")
     .forEach((item) => {
       item.classList.add("reveal");
       revealObserver.observe(item);
